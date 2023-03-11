@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor1: #170D4D;
+    --cor2: #2D1A99;
+    --cor3: #5B46D5;
+    --cor4: #3B23CC;
+    --cor5: #423E54;
+    --branco: #fff;
+}
+
+/* header */
+.afine-nav{
+    background-color: var(--cor1);
+}
+#afine-nav{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #afine-nav{
+        justify-content: start;
+    }
+}
+/* Button header */
+.afine-li{
+    right: 0;
+    position: absolute;
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    .afine-li{
+        right: 0;
+        position: absolute;
+        margin-right: 80px;
+    } 
+}
+/* Button header entrar */
+.afine-nav-btn-exit{
+    border: 1px solid var(--cor3);
+    color: rgba(255, 255, 255, 0.534);
+    padding: 10px 30px !important;
+    box-shadow: 0px 6px 17px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+@media (max-width: 768px) {
+    .afine-nav-btn-exit{
+        margin: 40px 0px 20px 0px;
+    }
+}
+.afine-nav-btn-exit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background: var(--cor3);
+    color: white;
+    box-shadow: 0px 6px 17px 4px #423e544d;
+    transition: transform .5s, color .5s, background .5s, box-shadow .5s;
+}
+/* Button header cadastrar */
+.afine-nav-btn-next{
+    border: 1px solid var(--cor3);
+    background: var(--cor4);
+    color: rgb(255, 255, 255);
+    padding: 10px 30px !important;
+    box-shadow: 0px 6px 17px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 18px;
+}
+.afine-nav-btn-next:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background: var(--cor3);
+    color: white;
+    box-shadow: 0px 6px 17px 4px #423e544d;
+    transition: transform .5s, color .5s, background .5s, box-shadow .5s;
+}
+/* menu mobile */
+.afine-nav-hamburguer {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+
+
+/*-------------conteudo-------------*/
+
+/*-------------containers padrões------------- */
+/*botões Padrões*/
+.afine-btn-next{
+    font-weight: bold;
+    margin: auto;
+    border: none;
+    background: var(--cor1);
+    color: rgb(255, 255, 255);
+    padding: 10px 50px !important;
+    box-shadow: 0px 2px 17px 4px var(--cor1);
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center!important;
+}
+.afine-btn-next:hover{
+    border: none;
+    transform: scale(1.1);
+    cursor: pointer;
+    background: var(--cor1);
+    color: white;
+    box-shadow: 0px 6px 17px 4px #423e54;
+    transition: transform .5s, color .5s, background .5s, box-shadow .5s;
+}
+.afine-btn-next.disabled{
+    background-color: var(--cor1)!important;
+    opacity: 0.5!important;
+}
+.afine-btn-exit{
+    border: 1px solid var(--cor2);
+    color: rgba(255, 255, 255, 0.534);
+    padding: 10px 50px !important;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: transparent;
+}
+.afine-btn-exit:hover{
+    background-color: transparent;
+    transform: scale(1.03);
+    cursor: pointer;
+    color: white;
+    border-color: var(--cor1);
+    box-shadow: 0px 6px 17px 4px #423e544d;
+    transition: transform .5s, color .5s, background .5s, box-shadow .5s;
+}
+
+/* background do formulario */
+.afine-col-form{
+    background: linear-gradient(176.14deg, #3B23CC 3.08%, #5B46D5 96.84%);
+    color: var(--branco);
+    margin-top: 5vh;
+    max-width: 768px;
+    border-radius: 22px;
+}
+/* borda padrão e sombra */
+.afine-borda-p{
+    border-radius: 22px;
+    box-shadow: 0px 6px 17px 4px rgba(0, 0, 0, 0.25);
+}
+/* Container inicial */
+.afine-container-inicial{
+    background-color: #170d4d4b;
+}
+/* h1 e h2 dos formularios mobile */
+@media(max-width: 400px) {
+    .afine-t2{
+        font-size: 15px!important;
+    }
+    .afine-t1{
+        font-size: 22px!important;
+    }
+}
+/* transição dos formularios */
+.fade-in-form {
+    animation: fadeIn 1s; 
+   }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.fade-out-form {
+    animation: fadeOut 1s; 
+   }
+@keyframes fadeOut {
+    100% { opacity: 0; }
+    0% { opacity: 1; }
+}
+/* formatação do radio */
+.form-check-input:checked {
+    background-color: var(--cor5)!important;
+    border-color: var(--cor5)!important;
+}
+
+
+
+
+
+/*-------------Primeiro Formulario, formulario objetivo------------- */
+.afine-label-form-obj{
+    position: relative;
+    padding-right:px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: start;
+    display: block;
+    margin: 17.5px 0px;
+    padding-left: 30px;
+    color: var(--cor1);
+    height: 50px;
+    max-width: 525px;
+    border-radius: 22px;
+    box-shadow: 0px 6px 17px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--branco);
+}
+.btn.btn-outline-success.afine-label-form-obj:hover{
+    box-shadow: 0px 7px 18px 7px var(--cor1);
+    background-color: var(--cor2);
+    color: var(--branco);
+    border: var(--cor1);
+    transition: background-color .5s, color .5s, box-shadow 1s;
+}
+.btn-check:checked+.btn{
+    background-color: #170D4D;
+    border: 1px solid #170D4D;
+}
+/*icone checked do formulario*/
+.afine-checked-form-obj {
+    padding-top: 4px;
+    margin: auto;
+    position: absolute;
+    right: 25px;
+    font-size: 30px;
+    display: none;
+}
+.btn-check:checked + .afine-label-form-obj .afine-checked-form-obj {
+    display: inline-block;
+    color: #fff;
+    transition: display .5s;
+}
+
+/*-------------segundo Formulario, formulario medidas------------- */
+/*input altura e peso*/
+.afine-form2-peso{
+    min-height: 51px;
+}
+.afine-input-peso::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+.afine-input-peso{
+    margin: auto;
+    height: 50px;
+    max-width: 310px;
+}
+.afine-input-peso::placeholder{
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--cor3);
+}
+/* altura */
+.afine-input-altura::placeholder{
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--cor3);
+}
+.afine-input-altura{
+    margin: 10px auto auto auto;
+    height: 50px;
+    max-width: 310px;
+}
+/* atividade fisica */
+.afine-text-range{
+    font-size: 10px;
+    padding: 0px 10px;
+    margin-top: -10px;
+}
+.afine-atividade-fisica{
+    margin: auto;
+    max-width: 420px;
+}
+/* bolinha do range */
+#atividade-fisica::-webkit-slider-thumb {
+    background-color: var(--cor1);
+    height: 20px;
+    width: 20px;
+}
+/* fundo do range */
+.form-range::-webkit-slider-runnable-track {
+    height: 10px;
+    background-color: #dee2e6;
+  }
+/* formatação da data */
+.afine-form-data{
+    max-width: 250px;
+    color: var(--cor3);
+}
+.afine-form-data::-webkit-calendar-picker-indicator {
+    filter: invert(10%) sepia(96%) saturate(5072%) hue-rotate(267deg) brightness(92%) contrast(92%);
+}
+
+/*-------------terceiro Formulario, formulario cadastro------------- */
+/* formulario de cadastro */
+.afine-form-cadastro{
+    color: var(--cor1);
+    z-index: 5;
+}
+.afine-input-form-cadastro{
+    max-width: 520px;
+    height: 50px;
+
+}
+.afine-icon-button{
+    color: #170D4D;
+}
+#afine-btn-senha{
+    background-color: var(--branco);
+    border: none;
+    border-radius: 0px 22px 22px 0px;
+
+}
+#afine-btn-senha:hover{
+    background-color: var(--cor3);
+    border: 1px solid var(--cor1)
+}
