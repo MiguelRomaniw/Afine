@@ -317,7 +317,7 @@
 /* sectio do blog */
 
 .afine-blog{
-    background-color: #170D4D;
+    background: linear-gradient(176.14deg, #170D4D 3.08%, #5B46D5 96.84%);;
 }
 .afine-blog-col{
     background-color: var(--branco);
@@ -349,4 +349,43 @@
     border: 1px solid var(--cor1);
     max-width: 60px;
     margin-right: 20px;
+}
+
+/* fale com a nutri */
+
+.afine-card-nutri{
+    background-color: var(--branco);
+}
+.afine-image-nutri{
+    max-height: 200px;
+}
+.afine-nome-nutri{
+    color: var(--cor1);
+}
+.afine-input-stars{
+    pointer-events: none;
+}
+.afine-post-nutri{
+    color: var(--cor1);
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.afine-client-nutri{
+    color: var(--cor1);
+    line-height: 1;
+}
+
+@media screen and (max-width: 400px) {
+   .afine-col-text .afine-nome-nutri{
+        font-size: 18px!important;
+    }
+    .afine-col-text .afine-post-nutri{
+        font-size: 14px!important;
+    }
+    .afine-col-text .afine-client-nutri{
+        font-size: 14px!important;
+    }
+    .afine-avaliacao-text{
+        font-size: 18px;
+    }
 }

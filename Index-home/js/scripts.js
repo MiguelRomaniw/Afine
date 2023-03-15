@@ -65,3 +65,4 @@ const inputPass = selector(".afine-input-senha");
 const iconPass = selector(".afine-icon-button");
 
 btnPass.addEventListener("click", () => { inputPass.type === "password" ? (inputPass.type = "text", modifyClass(iconPass, 'remove','fa-eye'), modifyClass(iconPass, 'add', 'fa-eye-slash')) : (inputPass.type = "password", modifyClass(iconPass, 'remove', 'fa-eye-slash'), modifyClass(iconPass, 'add','fa-eye'))});
+
