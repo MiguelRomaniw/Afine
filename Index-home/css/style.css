@@ -299,7 +299,6 @@
 .afine-input-form-cadastro{
     max-width: 520px;
     height: 50px;
-
 }
 .afine-icon-button{
     color: #170D4D;
@@ -308,9 +307,46 @@
     background-color: var(--branco);
     border: none;
     border-radius: 0px 22px 22px 0px;
-
 }
 #afine-btn-senha:hover{
     background-color: var(--cor3);
     border: 1px solid var(--cor1)
+}
+
+
+/* sectio do blog */
+
+.afine-blog{
+    background-color: #170D4D;
+}
+.afine-blog-col{
+    background-color: var(--branco);
+    color: var(--cor1);
+
+}
+.afine-image-blog img{
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top center;
+}
+.afine-tags-post{
+    line-height: 0px;
+    color: #170d4d63;
+    margin-bottom: 20px;
+}
+.afine-blog-content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.afine-blog-leia-mais{
+    font-size: 20px;
+    color: var(--cor1)
+}
+.afine-blog-img-nutri{
+    border: 1px solid var(--cor1);
+    max-width: 60px;
+    margin-right: 20px;
 }
